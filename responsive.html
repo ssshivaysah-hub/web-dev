@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            background-color: lightgray;
+            color: black;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .image-container img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+        }
+        @media (max-width: 767px) {
+
+            body {
+                font-size: 16px;
+                background-color: rgb(226, 91, 12);
+                color: darkblue;
+            }
+
+            .wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .image-container {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .image-container img {
+                aspect-ratio: 1 / 1;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+
+            body {
+                font-size: 14px;
+                background-color: rgb(36, 245, 36);
+                color: rgb(235, 79, 7);
+            }
+
+            .wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .image-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+
+            .image-container img {
+                aspect-ratio: 1 / 1;
+            }
+        }
+        @media (min-width: 1200px) {
+
+            body {
+                font-size: 18px;
+                background-color: lightyellow;
+                color: darkred;
+            }
+
+            .wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .image-container {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+            }
+
+            .image-container img {
+                aspect-ratio: 1 / 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="content">
+
+            <h1>I am from Nepal</h1>
+
+            <p>
+                This is mr shivnarayan.
+            </p>
+
+        </div>
+        <div class="image-container">
+            <img src="images/images.jpeg"
+                 alt="gallery Image">
+
+            <img src="./im/cat.jpeg"
+                 alt="gallery Image">
+
+            <img src="./im/meow.jpeg"
+                 alt="gallery Image">
+
+            <img src="./im/images.jpeg"
+                 alt="gallery Image">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
